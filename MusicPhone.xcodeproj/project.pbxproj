@@ -13,6 +13,7 @@
 		9322C5F51AACFD4A009E3BD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9322C5F41AACFD4A009E3BD8 /* Images.xcassets */; };
 		9322C5F81AACFD4A009E3BD8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9322C5F61AACFD4A009E3BD8 /* LaunchScreen.xib */; };
 		9322C6041AACFD4A009E3BD8 /* MusicPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9322C6031AACFD4A009E3BD8 /* MusicPhoneTests.swift */; };
+		942B357D1AAD03CD00347C1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B357C1AAD03CD00347C1F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9322C5FD1AACFD4A009E3BD8 /* MusicPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9322C6021AACFD4A009E3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9322C6031AACFD4A009E3BD8 /* MusicPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPhoneTests.swift; sourceTree = "<group>"; };
+		942B357C1AAD03CD00347C1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,9 @@
 		9322C5EA1AACFD4A009E3BD8 /* MusicPhone */ = {
 			isa = PBXGroup;
 			children = (
+				94B4EE961AAD027B00EF1B1C /* Views */,
+				94B4EE951AAD027600EF1B1C /* Controllers */,
+				94B4EE941AAD026F00EF1B1C /* Models */,
 				9322C5ED1AACFD4A009E3BD8 /* AppDelegate.swift */,
 				9322C5EF1AACFD4A009E3BD8 /* ViewController.swift */,
 				9322C5F11AACFD4A009E3BD8 /* Main.storyboard */,
@@ -110,6 +115,28 @@
 				9322C6021AACFD4A009E3BD8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94B4EE941AAD026F00EF1B1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		94B4EE951AAD027600EF1B1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				942B357C1AAD03CD00347C1F /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		94B4EE961AAD027B00EF1B1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942B357D1AAD03CD00347C1F /* LoginViewController.swift in Sources */,
 				9322C5F01AACFD4A009E3BD8 /* ViewController.swift in Sources */,
 				9322C5EE1AACFD4A009E3BD8 /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +435,7 @@
 				9322C6091AACFD4A009E3BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9322C60A1AACFD4A009E3BD8 /* Build configuration list for PBXNativeTarget "MusicPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +444,7 @@
 				9322C60C1AACFD4A009E3BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
