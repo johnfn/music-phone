@@ -84,7 +84,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJM-BQ-gM9"/>
-                                    <segue destination="Ktn-hn-seg" kind="show" identifier="Login Segue" id="Nwd-aX-Nm6"/>
+                                    <segue destination="Ktn-hn-seg" kind="presentation" identifier="Login Segue" id="Nwd-aX-Nm6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -138,7 +138,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="5Rj-nb-tc2" eventType="touchUpInside" id="Dqy-pz-YA3"/>
-                                    <segue destination="Ktn-hn-seg" kind="show" identifier="Register Segue" id="EDC-bV-HJ1"/>
+                                    <segue destination="Ktn-hn-seg" kind="presentation" identifier="Register Segue" id="EDC-bV-HJ1"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-2Y-ufs">
