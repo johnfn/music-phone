@@ -26,6 +26,7 @@
 		942B35941AAD05EC00347C1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35931AAD05EC00347C1F /* SystemConfiguration.framework */; };
 		942B35961AAD05F500347C1F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35951AAD05F500347C1F /* libz.dylib */; };
 		942B35981AAD05FD00347C1F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35971AAD05FD00347C1F /* libsqlite3.dylib */; };
+		942B359B1AAD08B600347C1F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B359A1AAD08B600347C1F /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		942B35931AAD05EC00347C1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		942B35951AAD05F500347C1F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		942B35971AAD05FD00347C1F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		942B359A1AAD08B600347C1F /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		9322C5EA1AACFD4A009E3BD8 /* MusicPhone */ = {
 			isa = PBXGroup;
 			children = (
+				942B35991AAD08AA00347C1F /* Sound Player */,
 				94B4EE961AAD027B00EF1B1C /* Views */,
 				94B4EE951AAD027600EF1B1C /* Controllers */,
 				94B4EE941AAD026F00EF1B1C /* Models */,
@@ -172,6 +175,14 @@
 				942B357F1AAD058E00347C1F /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		942B35991AAD08AA00347C1F /* Sound Player */ = {
+			isa = PBXGroup;
+			children = (
+				942B359A1AAD08B600347C1F /* SoundPlayer.swift */,
+			);
+			name = "Sound Player";
 			sourceTree = "<group>";
 		};
 		94B4EE941AAD026F00EF1B1C /* Models */ = {
@@ -297,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				942B357D1AAD03CD00347C1F /* LoginViewController.swift in Sources */,
+				942B359B1AAD08B600347C1F /* SoundPlayer.swift in Sources */,
 				9322C5EE1AACFD4A009E3BD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
