@@ -17,13 +17,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         initAwesomeTextIcons()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func initAwesomeTextIcons() {
@@ -34,11 +31,12 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(sender: UIButton) {
         
     }
-    
-    func addIconToTextbox(icon: FAKFontAwesome!, text:UITextField) {
-        var leftLabel = UILabel(frame: CGRect(x: 1, y: 1, width: 60, height: 25))
 
-        icon.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor())
+    func addIconToTextbox(icon: FAKFontAwesome!, text:UITextField, iconIsActive:Bool = false) {
+        var leftLabel = UILabel(frame: CGRect(x: 1, y: 1, width: 60, height: 25))
+        var color = iconIsActive ? UIColor.darkGrayColor() : UIColor.lightGrayColor()
+
+        icon.addAttribute(NSForegroundColorAttributeName, value: color)
 
         var img = icon.imageWithSize(CGSize(width: 32, height: 32))
         var imgView = UIImageView(image: img)
@@ -46,7 +44,17 @@ class LoginViewController: UIViewController {
         text.leftView = imgView
         text.leftViewMode = UITextFieldViewMode.Always
     }
-    
+
+    @IBAction func editUsername(sender: UITextField) {
+        addIconToTextbox(FAKFontAwesome.userIconWithSize(20), text: usernameText, iconIsActive: true)
+        addIconToTextbox(FAKFontAwesome.lockIconWithSize(20), text: passwordText)
+    }
+
+    @IBAction func editPasword(sender: UITextField) {
+        addIconToTextbox(FAKFontAwesome.userIconWithSize(20), text: usernameText)
+        addIconToTextbox(FAKFontAwesome.lockIconWithSize(20), text: passwordText, iconIsActive: true)
+    }
+
     /*
     // MARK: - Navigation
 
