@@ -28,6 +28,10 @@ class LoginViewController: UIViewController {
         addIconToTextbox(FAKFontAwesome.lockIconWithSize(20), text: passwordText)
     }
 
+    @IBAction func loginButtonPressed(sender: UIButton) {
+        
+    }
+
     func addIconToTextbox(icon: FAKFontAwesome!, text:UITextField, iconIsActive:Bool = false) {
         var leftLabel = UILabel(frame: CGRect(x: 1, y: 1, width: 60, height: 25))
         var color = iconIsActive ? UIColor.darkGrayColor() : UIColor.lightGrayColor()
