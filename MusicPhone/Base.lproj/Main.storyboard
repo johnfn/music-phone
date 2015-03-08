@@ -44,6 +44,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="XKQ-Xo-pXb" id="x1P-5e-CRP"/>
                         <outlet property="usernameText" destination="8Gl-la-ERN" id="khg-1o-7WU"/>
                     </connections>
                 </viewController>

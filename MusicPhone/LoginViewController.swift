@@ -11,11 +11,12 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initAwesomeTextIcons();
+        initAwesomeTextIcons()
 
         // Do any additional setup after loading the view.
     }
@@ -26,18 +27,22 @@ class LoginViewController: UIViewController {
     }
 
     func initAwesomeTextIcons() {
+        addIconToTextbox(FAKFontAwesome.userIconWithSize(20), text: usernameText)
+        addIconToTextbox(FAKFontAwesome.lockIconWithSize(20), text: passwordText)
+    }
+
+    func addIconToTextbox(icon: FAKFontAwesome!, text:UITextField) {
         var leftLabel = UILabel(frame: CGRect(x: 1, y: 1, width: 60, height: 25))
 
-        leftLabel.text = "Wow!"
-        leftLabel.font = UIFont(name: "verdana", size: 15)
-        leftLabel.textColor = UIColor.grayColor()
-        leftLabel.textAlignment = NSTextAlignment.Right
+        icon.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor())
 
-        usernameText.leftView = leftLabel
-        usernameText.leftViewMode = UITextFieldViewMode.Always
+        var img = icon.imageWithSize(CGSize(width: 32, height: 32))
+        var imgView = UIImageView(image: img)
+
+        text.leftView = imgView
+        text.leftViewMode = UITextFieldViewMode.Always
     }
     
-
     /*
     // MARK: - Navigation
 
