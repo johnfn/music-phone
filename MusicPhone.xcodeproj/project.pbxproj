@@ -30,6 +30,8 @@
 		942B35961AAD05F500347C1F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35951AAD05F500347C1F /* libz.dylib */; };
 		942B35981AAD05FD00347C1F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35971AAD05FD00347C1F /* libsqlite3.dylib */; };
 		942B359B1AAD08B600347C1F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B359A1AAD08B600347C1F /* SoundPlayer.swift */; };
+		946FEC161AAD0F13009B5D5A /* piano1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 946FEC151AAD0F13009B5D5A /* piano1.mp3 */; };
+		946FEC181AAD0F34009B5D5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FEC171AAD0F34009B5D5A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		942B35951AAD05F500347C1F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		942B35971AAD05FD00347C1F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		942B359A1AAD08B600347C1F /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		946FEC151AAD0F13009B5D5A /* piano1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano1.mp3; sourceTree = "<group>"; };
+		946FEC171AAD0F34009B5D5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B9F44A1F2D99A19E39DDE2F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FEC181AAD0F34009B5D5A /* AVFoundation.framework in Frameworks */,
 				93FBAF641AAD0E6400644AF1 /* Accounts.framework in Frameworks */,
 				93FBAF621AAD0E6000644AF1 /* Social.framework in Frameworks */,
 				942B35981AAD05FD00347C1F /* libsqlite3.dylib in Frameworks */,
@@ -149,6 +154,7 @@
 		9322C5EB1AACFD4A009E3BD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				946FEC141AAD0F01009B5D5A /* Piano Sounds */,
 				942B357E1AAD055700347C1F /* Frameworks */,
 				9322C5EC1AACFD4A009E3BD8 /* Info.plist */,
 			);
@@ -200,6 +206,14 @@
 			name = "Sound Player";
 			sourceTree = "<group>";
 		};
+		946FEC141AAD0F01009B5D5A /* Piano Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				946FEC151AAD0F13009B5D5A /* piano1.mp3 */,
+			);
+			name = "Piano Sounds";
+			sourceTree = "<group>";
+		};
 		94B4EE941AAD026F00EF1B1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +239,7 @@
 		95C9D2A69CC53AC8991FD89C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				946FEC171AAD0F34009B5D5A /* AVFoundation.framework */,
 				93FBAF631AAD0E6400644AF1 /* Accounts.framework */,
 				93FBAF611AAD0E6000644AF1 /* Social.framework */,
 				B9F44A1F2D99A19E39DDE2F1 /* libPods.a */,
@@ -323,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FEC161AAD0F13009B5D5A /* piano1.mp3 in Resources */,
 				9322C5F31AACFD4A009E3BD8 /* Main.storyboard in Resources */,
 				9322C5F81AACFD4A009E3BD8 /* LaunchScreen.xib in Resources */,
 				9322C5F51AACFD4A009E3BD8 /* Images.xcassets in Resources */,
