@@ -13,6 +13,8 @@
 		9322C5F51AACFD4A009E3BD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9322C5F41AACFD4A009E3BD8 /* Images.xcassets */; };
 		9322C5F81AACFD4A009E3BD8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9322C5F61AACFD4A009E3BD8 /* LaunchScreen.xib */; };
 		9322C6041AACFD4A009E3BD8 /* MusicPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9322C6031AACFD4A009E3BD8 /* MusicPhoneTests.swift */; };
+		93FBAF621AAD0E6000644AF1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBAF611AAD0E6000644AF1 /* Social.framework */; };
+		93FBAF641AAD0E6400644AF1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FBAF631AAD0E6400644AF1 /* Accounts.framework */; };
 		942B357D1AAD03CD00347C1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B357C1AAD03CD00347C1F /* LoginViewController.swift */; };
 		942B35801AAD058E00347C1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B357F1AAD058E00347C1F /* Parse.framework */; };
 		942B35821AAD059400347C1F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B35811AAD059400347C1F /* Bolts.framework */; };
@@ -52,6 +54,9 @@
 		9322C5FD1AACFD4A009E3BD8 /* MusicPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9322C6021AACFD4A009E3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9322C6031AACFD4A009E3BD8 /* MusicPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPhoneTests.swift; sourceTree = "<group>"; };
+		93FBAF601AAD0DA400644AF1 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		93FBAF611AAD0E6000644AF1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		93FBAF631AAD0E6400644AF1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		942B357C1AAD03CD00347C1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		942B357F1AAD058E00347C1F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		942B35811AAD059400347C1F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -75,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FBAF641AAD0E6400644AF1 /* Accounts.framework in Frameworks */,
+				93FBAF621AAD0E6000644AF1 /* Social.framework in Frameworks */,
 				942B35981AAD05FD00347C1F /* libsqlite3.dylib in Frameworks */,
 				942B35961AAD05F500347C1F /* libz.dylib in Frameworks */,
 				942B35941AAD05EC00347C1F /* SystemConfiguration.framework in Frameworks */,
@@ -105,6 +112,7 @@
 		9322C5DF1AACFD4A009E3BD8 = {
 			isa = PBXGroup;
 			children = (
+				93FBAF601AAD0DA400644AF1 /* BridgingHeader.h */,
 				9322C5EA1AACFD4A009E3BD8 /* MusicPhone */,
 				9322C6001AACFD4A009E3BD8 /* MusicPhoneTests */,
 				9322C5E91AACFD4A009E3BD8 /* Products */,
@@ -217,6 +225,8 @@
 		95C9D2A69CC53AC8991FD89C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93FBAF631AAD0E6400644AF1 /* Accounts.framework */,
+				93FBAF611AAD0E6000644AF1 /* Social.framework */,
 				B9F44A1F2D99A19E39DDE2F1 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -501,6 +511,7 @@
 				INFOPLIST_FILE = MusicPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -516,6 +527,7 @@
 				INFOPLIST_FILE = MusicPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
 			};
 			name = Release;
 		};
