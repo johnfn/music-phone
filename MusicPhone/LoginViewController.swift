@@ -10,8 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var usernameText: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        initAwesomeTextIcons();
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +23,18 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func initAwesomeTextIcons() {
+        var leftLabel = UILabel(frame: CGRect(x: 1, y: 1, width: 60, height: 25))
+
+        leftLabel.text = "Wow!"
+        leftLabel.font = UIFont(name: "verdana", size: 15)
+        leftLabel.textColor = UIColor.grayColor()
+        leftLabel.textAlignment = NSTextAlignment.Right
+
+        usernameText.leftView = leftLabel
+        usernameText.leftViewMode = UITextFieldViewMode.Always
     }
     
 
