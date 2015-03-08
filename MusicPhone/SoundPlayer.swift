@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import AVFoundation
 
 class SoundPlayer {
+    var soundArray = [AVPlayer]()
     
+    // MARK: Public API
+    func playSound() {
+        var audioFilePath = NSBundle.mainBundle().pathForResource("piano1", ofType: "mp3")
+        var audioFileURL = NSURL(fileURLWithPath: audioFilePath!)
+        
+        var soundPlayer = AVPlayer(URL: audioFileURL)
+        self.soundArray.append(soundPlayer)
+        
+        soundPlayer.play()
+    }
+    
+    // MARK: Private methods
 }
