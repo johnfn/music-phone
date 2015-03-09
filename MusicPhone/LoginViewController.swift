@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -29,7 +30,16 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(sender: UIButton) {
+        let username = self.usernameText.text
+        let password = self.passwordText.text
         
+        PFUser.logInWithUsernameInBackground(username, password: password) { (user, error) -> Void in
+            if error != nil { // error when trying to login
+                
+            } else { // was able to login
+                self.performSegueWithIdentifier("Login Segue", sender: self)
+            }
+        }
     }
 
     func addIconToTextbox(icon: FAKFontAwesome!, text:UITextField, iconIsActive:Bool = false) {

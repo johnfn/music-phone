@@ -33,7 +33,7 @@ class RegistrationViewController: UIViewController {
             if error != nil { // was not able to sign up
                 
             } else { // was able to sign up
-                self.performSegueWithIdentifier("", sender: self)
+                self.performSegueWithIdentifier("Register Segue", sender: self)
             }
         }
     }
