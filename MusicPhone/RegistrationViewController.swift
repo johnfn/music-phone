@@ -7,12 +7,11 @@
 //
 
 import UIKit
+import Parse
 
 class RegistrationViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
-
     @IBOutlet weak var usernameTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
@@ -21,6 +20,22 @@ class RegistrationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func registerButtonPressed(sender: UIButton) {
+        let email = self.emailTextField.text!
+        let username = self.usernameTextField.text!
+        let password = self.passwordTextField.text!
+        
+        var pfUser = PFUser()
+        pfUser.email = email
+        pfUser.username = username
+        pfUser.password = password
+        
+        pfUser.signUpInBackgroundWithBlock { (succeeded, error) -> Void in
+            if error != nil { // was not able to sign up
+                
+            } else { // was able to sign up
+                self.performSegueWithIdentifier("", sender: self)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

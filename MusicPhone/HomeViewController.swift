@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println(PFUser.currentUser())
+        
         // Do any additional setup after loading the view.
     }
 
